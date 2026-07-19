@@ -33,14 +33,16 @@ The recommended interaction is:
    independent Panel Members, all-versus-all peer review, rebuttal, source
    audit, synthesis, red-team, and forecasting stages.
 4. Review the technical synthesis and forecasts.
-5. Only then run the downstream Investment Analyst for layer-level and
-   company-level analysis.
+5. Only then run the downstream Applied Analyst for the application or
+   decision requested by the charter.
 
 `README.md` documents the system. `START_HERE.md` is the runbook. The files in
 `agents/` are role contracts that `MODEL` loads as needed; they are not
 standalone programs. Project-local run storage is defined in
-[`projects/README.md`](projects/README.md). The graph, embedding, and
-frontend layers are planned later.
+[`projects/README.md`](projects/README.md). The logical graph and retrieval
+design are documented in [`GRAPH_PLAN.md`](GRAPH_PLAN.md), and the personal
+AWS deployment is documented in [`AWS_PLAN.md`](AWS_PLAN.md). Neither plan has
+been implemented yet.
 
 ## Project workspaces
 
@@ -62,8 +64,8 @@ synthesis remain auditable.
 - **Domain Analyst** (`agents/domain-analyst.md`) reconciles the panel into explicit technical claims without erasing minority views.
 - **Adversarial Reviewer** (`agents/adversarial-reviewer.md`) performs a final independent red-team pass on the synthesis.
 - **Forecaster** (`agents/forecaster.md`) converts reviewed claims into falsifiable, probabilistic forecasts.
-- **Writer** and **Editor** (`agents/writer.md`, `agents/editor.md`) produce and audit the technical report.
-- **Investment Analyst** (`agents/investment-analyst.md`) is downstream only, translating frozen forecasts into structural implications.
+- **Writer** and **Editor** (`agents/writer.md`, `agents/editor.md`) produce and audit the research report.
+- **Applied Analyst** (`agents/applied-analyst.md`) is downstream only, translating frozen findings into the application or decision requested by the charter.
 
 ## Research workflow
 
@@ -76,7 +78,8 @@ The default workflow is:
 5. Members respond to their reviews. They may revise or narrow their thesis, but revisions remain visibly separate from the original memo.
 6. The Research Director audits participation, source quality, review quality, score distributions, and unresolved disagreements. It identifies the best-supported explanations, but does not select a winner by majority vote alone.
 7. The Domain Analyst turns the reviewed panel record into claims and competing scenarios. The Adversarial Reviewer then attacks that synthesis independently.
-8. Only after technical claims survive review does the Forecaster, Writer, Editor, and eventually Investment Analyst proceed.
+8. Only after the core research survives review do the Forecaster, Writer,
+   Editor, and eventually Applied Analyst proceed.
 
 The panel is not a popularity contest. A thesis with the most votes is not automatically the best thesis. The supervisor must distinguish evidence quality, reasoning quality, source independence, reviewer agreement, and unresolved minority objections.
 
@@ -84,13 +87,17 @@ The panel is not a popularity contest. A thesis with the most votes is not autom
 
 Every agent may retrieve sources, but not every source type has the same evidentiary role:
 
-- **Primary sources:** papers, technical reports, model cards, release notes, documentation, repositories, benchmark methodology, standards, filings, and first-party measurements. These carry the core factual burden.
-- **Structured measurement sources:** OpenRouter, Artificial Analysis, and similar systems can provide model availability, pricing, latency, throughput, benchmark, and usage signals. Record the measurement date, model/version, methodology, and limitations; do not treat an aggregator as ground truth without checking its underlying method.
-- **Expert social sources:** X/Twitter and similar public commentary are valuable for discovering current work, deployment clues, and expert hypotheses. Use author expertise, original work, specificity, and corroboration as quality signals. Likes, followers, virality, institutional prestige, or a famous affiliation are discovery signals, not evidence by themselves.
+- **Primary sources:** papers, technical reports, official records, documentation, repositories, datasets, standards, filings, benchmark methodology, and first-party measurements. These carry the core factual burden.
+- **Structured measurement sources:** domain-specific databases, registries, archives, benchmarks, and measurement services can provide useful observations when the charter calls for them. Record the item/version, measurement date, methodology, coverage, and limitations; do not treat an aggregator as ground truth without checking its underlying method.
+- **Public commentary:** interviews, social posts, expert discussion, and other public commentary can help discover work and hypotheses. Use specificity, original work, relevance, and corroboration as quality signals. Popularity, virality, credentials, or institutional prestige are discovery signals, not evidence by themselves.
 - **Secondary reporting:** useful for finding leads and context, but important claims should be checked against primary or structured sources.
 
 No agent may cite a source it did not actually retrieve and inspect. Every source note should preserve the URL or identifier, author or organization, publication/post date, retrieval date, relevant excerpt or locator, and the exact claim the source supports. If a source cannot be verified, label it as a lead rather than evidence.
 
 ## Current scope
 
-The current work is intentionally focused on the Markdown agent contracts and research protocol. Storage, embeddings, graph traversal, and the frontend come later. The agent outputs should still be structured and provenance-aware so they can be placed into the future graph without changing the research method.
+The current work is intentionally focused on the Markdown agent contracts and
+research protocol. Storage, embeddings, graph traversal, and the frontend are
+planned but not yet implemented. Agent outputs should still be structured and
+provenance-aware so they can be placed into the future graph without changing
+the research method.

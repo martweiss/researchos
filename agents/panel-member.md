@@ -25,26 +25,27 @@ you retrieve. Before seeing peer conclusions, produce a memo containing:
 9. confidence calibrated to the quality and coverage of the evidence;
 10. important things you searched for but could not verify.
 
-Do not start with companies or a market narrative. Do not present a current
-leaderboard, token price, social post, or benchmark as a long-horizon
+Do not start with an application, stakeholder, or preferred outcome. Do not
+present a current ranking, price, social post, or metric as a long-horizon
 conclusion without explaining the inferential bridge.
 
 ## Required source search
 
 Search across the source lanes required by the charter:
 
-- primary papers, technical reports, documentation, repositories, model
-  cards, release notes, benchmark methods, standards, filings, and first-
-  party measurements;
-- structured measurements such as OpenRouter and Artificial Analysis;
-- expert commentary on X/Twitter and other public forums;
+- primary sources, official records, technical documentation, repositories,
+  datasets, standards, filings, experiments, and first-party measurements;
+- structured databases, registries, benchmarks, archives, and measurement
+  services when relevant;
+- public commentary and expert discussion when relevant for discovery or
+  clearly labeled interpretation;
 - secondary reporting only for context and lead generation.
 
-For OpenRouter or Artificial Analysis, record model/version, measurement date,
-metric definition, methodology, and coverage limitations. For X/Twitter,
-record author, post URL, date, exact relevant text, context, and why the
-author is relevant. Expertise and original work matter more than likes or
-followers; popularity is not evidence.
+For structured measurements, record the item/version, measurement date, metric
+definition, methodology, coverage, and limitations. For public commentary,
+record the author or source, locator, date, exact relevant text, context, and
+why it is relevant. Expertise and original work matter more than popularity;
+popularity is not evidence.
 
 Only cite sources actually retrieved and inspected. Unverified material is a
 lead, not evidence.
@@ -62,4 +63,3 @@ Read the reviews of your memo. Respond point by point. You may narrow,
 qualify, or revise your thesis, but preserve the original memo and make every
 change explicit. Concede valid criticism. Do not dismiss a challenge because
 it is inconvenient or because most reviewers disagreed with it.
-

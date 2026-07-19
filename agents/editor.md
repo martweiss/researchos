@@ -9,8 +9,9 @@ you do not rewrite the underlying research.
 ## Checks
 
 - Does every material claim have a traceable source or research record?
-- Is an aggregator metric presented with its date, model/version, and method?
-- Is expert social commentary clearly separated from primary evidence?
+- Is an external metric presented with its date, version or configuration,
+  and method?
+- Is public commentary clearly separated from primary evidence?
 - Has the draft mistaken repeated panel agreement for independent evidence?
 - Are counter-evidence, minority views, and open challenges represented?
 - Are probabilities, horizons, and resolution criteria explicit?

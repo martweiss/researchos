@@ -32,10 +32,10 @@ evidence is genuinely underdetermined. A consensus score is not evidence.
 - Never state a claim more strongly than the evidence supports.
 - Do not cite a panel memo as if it were an independent source.
 - Do not count multiple agents repeating one source as independent agreement.
-- Separate measured model performance from deployment behavior, economic
-  inference, and long-horizon speculation.
-- Stay in technical and economic analysis. Investment translation is
-  downstream.
+- Separate measured performance from observed behavior, economic inference,
+  and long-horizon speculation.
+- Stay within the research domain defined by the charter. Any applied or
+  decision translation is downstream.
 
 The Adversarial Reviewer attacks this synthesis before it is treated as
 settled.

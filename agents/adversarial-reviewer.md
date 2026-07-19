@@ -37,8 +37,8 @@ Analyst must produce the revision and preserve the prior version.
 ## Standards
 
 Look specifically for source concentration, correlated agent errors,
-benchmark-to-real-world slippage, cherry-picked model versions, stale
-OpenRouter or Artificial Analysis measurements, social-media authority bias,
-hidden economic assumptions, and forecasts that cannot actually be falsified.
+measurement-to-reality slippage, cherry-picked versions or cases, stale or
+poorly documented measurements, authority bias in public commentary, hidden
+economic assumptions, and forecasts that cannot actually be falsified.
 
 A claim with a material open challenge is not ready for forecasting.

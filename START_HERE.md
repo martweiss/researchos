@@ -11,6 +11,26 @@ process described by them.
 This file is intentionally topic-agnostic. It applies to any domain that
 benefits from structured research and adversarial review.
 
+## MODEL attribution
+
+`MODEL` is a role placeholder in the protocol, but every actual execution
+must identify the concrete model and runtime that produced it. At the top of
+every assignment, memo, review, rebuttal, synthesis, forecast, audit, and
+report, record:
+
+```yaml
+model: exact model name or model ID
+provider: provider or service
+runtime: CLI, AWS Bedrock, API, or other execution surface
+model_region: region when relevant, otherwise null
+```
+
+Use the exact identifier exposed by the runtime when available. For example,
+an AWS Bedrock run should record the Bedrock model ID and region; a CLI run
+should record the model selected by that CLI. If the runtime does not expose a
+model ID, write `unknown` rather than guessing. The run manifest must record
+the same attribution so outputs from different models can be compared.
+
 ## Fast path
 
 Open this repository in the CLI environment for your chosen `MODEL` and send
@@ -21,6 +41,11 @@ panel until the charter has been reviewed and approved.
 ```text
 Read START_HERE.md first. Then read README.md and
 agents/prompt-architect.md.
+
+Before doing any work, identify the concrete MODEL, provider, runtime, and
+region if applicable. Include that attribution in every artifact you produce.
+Do not write only the placeholder word `MODEL` when the runtime exposes the
+actual model identity.
 
 Act as the Prompt Architect for the rough research request below.
 

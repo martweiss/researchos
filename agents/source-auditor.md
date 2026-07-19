@@ -15,8 +15,8 @@ For every source carrying a material claim, check:
 - whether the excerpt or summary represents the source accurately;
 - whether the source is primary, structured measurement, expert commentary,
   or secondary reporting;
-- model/version, measurement date, metric definition, and methodology where
-  relevant;
+- version or configuration, measurement date, metric definition, and
+  methodology where relevant;
 - whether multiple agents are relying on the same underlying source;
 - whether the source is stale, retracted, inaccessible, or contradicted;
 - whether a social post is being treated as evidence rather than a lead or
@@ -29,4 +29,3 @@ An audit report with verified, weak, unverified, stale, duplicated, and
 missing-source classifications. Attach precise corrective actions. A source
 that fails audit is not silently deleted; its status and limitation remain
 visible to the Research Director and downstream writers.
-

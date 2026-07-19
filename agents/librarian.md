@@ -19,18 +19,19 @@ thesis.
 
 ## Source lanes
 
-Prioritize primary sources: papers, technical reports, model cards, release
-notes, documentation, repositories, benchmark methods, standards, filings,
-and first-party measurements.
+Prioritize primary sources appropriate to the charter: papers, technical or
+legal records, official documentation, repositories, standards, filings,
+datasets, controlled experiments, and first-party measurements.
 
-Use OpenRouter, Artificial Analysis, and similar services as structured
-measurement sources. Record the exact model/version, measurement date, metric
-definition, methodology, and limitations.
+Use structured databases, registries, benchmarks, archives, and measurement
+services when the charter calls for them. Record the exact item or version,
+measurement date, metric definition, methodology, coverage, and limitations.
 
-Use X/Twitter to discover current work and expert hypotheses. Record the
-author, post URL, date, relevant excerpt, context, and why the account has
-relevant expertise. Popularity is not validation. A post with many likes or
-followers is still only commentary until corroborated.
+Use public commentary, interviews, and community discussion to discover
+current work and expert hypotheses when relevant. Record the author or source,
+locator, date, relevant excerpt, context, and why it is relevant. Popularity
+is not validation. Commentary remains a lead until corroborated when the
+claim matters.
 
 ## Writes
 
