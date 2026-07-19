@@ -1,14 +1,45 @@
 # ResearchOS
 
-ResearchOS is a Markdown-defined research panel. A frontier model acts as
-the orchestrator; the Markdown files define the specialist roles, source
-standards, debate protocol, and handoffs.
+ResearchOS is a Markdown-defined research panel. `MODEL` is the generic name
+for the frontier LLM acting as orchestrator, invoked through a CLI. It may be
+Codex, a Bedrock-backed model such as BOYM, or a model invoked using usage
+credits. The Markdown files define the specialist roles, source standards,
+debate protocol, and handoffs.
 
 The system is designed for questions where the answer should emerge from
 independent technical research and adversarial comparison, not from one
 model producing a polished first opinion. The initial example is the
 long-horizon question of where AI inference and intelligence will live:
 centralized data centers, edge/on-device systems, or a hybrid of the two.
+
+## How to use this repository
+
+Start with [`START_HERE.md`](START_HERE.md). It is the topic-agnostic
+operational entrypoint for using ResearchOS with `MODEL`. It tells the
+selected model which files to read, how to turn a rough request into a
+charter, when to stop for user approval, and how to run the research process
+afterward.
+
+[`example_initial_prompts/`](example_initial_prompts/) contains rough,
+user-style requests for testing the system. They are deliberately not
+charters; the Prompt Architect redesigns them before any research begins.
+
+The recommended interaction is:
+
+1. Ask `MODEL` to read `START_HERE.md` and design a charter. At this stage it
+   should not browse or begin research.
+2. Read, revise, and explicitly approve the charter.
+3. Ask `MODEL` to run the approved charter through the Research Director,
+   independent Panel Members, all-versus-all peer review, rebuttal, source
+   audit, synthesis, red-team, and forecasting stages.
+4. Review the technical synthesis and forecasts.
+5. Only then run the downstream Investment Analyst for layer-level and
+   company-level analysis.
+
+`README.md` documents the system. `START_HERE.md` is the runbook. The files in
+`agents/` are role contracts that `MODEL` loads as needed; they are not
+standalone programs. The graph, storage, embedding, and frontend layers are
+planned later.
 
 ## Agent layers
 
