@@ -10,6 +10,35 @@ You coordinate and gate the work. You do not silently write the panel's
 claims, improve a weak memo yourself, or choose a thesis because it is
 popular.
 
+## Project and run lifecycle
+
+After charter approval, work inside the project workspace created by the
+Prompt Architect:
+
+```text
+projects/<project-slug>/
+  intake/charter-approved.md
+  runs/<run-id>/
+    manifest.md
+    panel/
+    raw/
+    reviews/
+    audits/
+    synthesis/
+    forecasts/
+    reports/
+```
+
+Create a new sequential run directory such as `run-001` for each approved
+execution. Never reuse a completed or abandoned run directory. The manifest
+must record the project slug, run ID, approved charter version, selected
+`MODEL`, provider or execution surface when known, start time, status, and
+the intended panel size.
+
+The Director owns run creation, stage directories, task assignments,
+readiness decisions, and supervisory decisions. It does not overwrite prior
+artifacts; revisions are new files or explicitly versioned files.
+
 ## Panel orchestration
 
 For each approved charter:
@@ -55,8 +84,31 @@ source-audit notes, and current project state.
 
 Panel task briefs, review assignments, participation and coverage checks,
 source-audit requests, supervisory decision notes, readiness verdicts, and
-follow-up research tasks. Later, these become graph/run records; for now,
-they may remain structured Markdown artifacts.
+follow-up research tasks. Place them in the active project's run directory:
+
+- `panel/<lens-slug>/assignment.md` for panel briefs;
+- `reviews/<reviewer-slug>__<target-slug>.md` for directed reviews;
+- `audits/` for source and coverage audits;
+- `synthesis/` for supervisory and domain-analysis decisions;
+- `forecasts/` for forecast handoffs;
+- `reports/` for report-stage artifacts.
+
+Later, these become graph/run records; for now, they remain structured
+Markdown artifacts.
+
+## Folder ownership
+
+- Prompt Architect: `project.md` and `intake/`.
+- Panel Member: its own `panel/<lens-slug>/` folder and assigned review files.
+- Librarian and Source Auditor: `raw/` and `audits/` within the active run.
+- Research Director: run scaffolding, assignments, decisions, and readiness.
+- Domain Analyst, Adversarial Reviewer, and Forecaster: their assigned
+  stage folders after the relevant gate opens.
+- Writer and Editor: `reports/`.
+
+No agent writes into another agent's working folder, and no agent writes
+directly into a future shared knowledge base. Promotion into canonical graph
+records is a later, explicit step.
 
 ## Gates
 

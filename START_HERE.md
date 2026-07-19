@@ -61,18 +61,21 @@ APPROVED — run the charter.
 The Research Director should then:
 
 1. freeze the approved charter;
-2. create the topic-specific research organization;
-3. instantiate independent research runs for the approved specialist
+2. preserve the approved charter under `projects/<project-slug>/intake/`;
+3. create a new `projects/<project-slug>/runs/<run-id>/` workspace and
+   manifest;
+4. create the topic-specific research organization;
+5. instantiate independent research runs for the approved specialist
    lenses;
-4. wait until independent research outputs are complete;
-5. assign peer reviews according to the charter, with all-versus-all review
+6. wait until independent research outputs are complete;
+7. assign peer reviews according to the charter, with all-versus-all review
    when that protocol is appropriate;
-6. collect reviews before exposing aggregate scores or other reviews;
-7. route reviews to authors for rebuttal or explicit revision;
-8. run source auditing and coverage checks;
-9. supervise synthesis while preserving unresolved minority views;
-10. run adversarial review and forecasting where appropriate;
-11. stop before downstream recommendations if a material research challenge
+8. collect reviews before exposing aggregate scores or other reviews;
+9. route reviews to authors for rebuttal or explicit revision;
+10. run source auditing and coverage checks;
+11. supervise synthesis while preserving unresolved minority views;
+12. run adversarial review and forecasting where appropriate;
+13. stop before downstream recommendations if a material research challenge
     remains unresolved.
 
 Before any applied output—investment, policy, product, strategic, or other

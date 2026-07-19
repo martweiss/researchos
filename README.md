@@ -38,8 +38,18 @@ The recommended interaction is:
 
 `README.md` documents the system. `START_HERE.md` is the runbook. The files in
 `agents/` are role contracts that `MODEL` loads as needed; they are not
-standalone programs. The graph, storage, embedding, and frontend layers are
-planned later.
+standalone programs. Project-local run storage is defined in
+[`projects/README.md`](projects/README.md). The graph, embedding, and
+frontend layers are planned later.
+
+## Project workspaces
+
+Each research question gets a project directory under `projects/`. The
+Prompt Architect initializes the project and preserves the rough request and
+charter drafts. After approval, the Research Director creates a new run
+directory for the actual panel execution. Agents write only inside their
+assigned run or stage folders, so independent work, reviews, revisions, and
+synthesis remain auditable.
 
 ## Agent layers
 

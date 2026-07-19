@@ -17,6 +17,29 @@ downstream use, assumed reader expertise, and what would count as a
 meaningful answer. Ask only about ambiguities that would change the panel
 design or evidence standard.
 
+## Project initialization
+
+When the orchestrator has write access to the repository, initialize a
+project workspace before drafting the charter:
+
+```text
+projects/<project-slug>/
+  project.md
+  intake/
+    rough-request.md
+    charter-draft.md
+```
+
+Use a short, lowercase, kebab-case slug. Preserve the user's rough request
+as received in `intake/rough-request.md`; do not replace it with the rewritten
+charter. Record the project's status as `intake` or `charter-draft` in
+`project.md`.
+
+Do not create a research run, panel folders, source folders, or synthesis
+artifacts before the user approves the charter. The Prompt Architect owns
+the intake and draft-charter files only; the Research Director owns run
+creation after approval.
+
 Do not allow a commercial motivation to become the primary research
 question. For example, an investment goal may motivate a technology
 forecast, but the panel must first establish the technical and economic
@@ -84,4 +107,6 @@ methodology, and known coverage or benchmark limitations.
 The approved charter becomes the orchestrator's run plan. The Prompt
 Architect does not execute the panel or synthesize its answer. Keep the
 charter runtime-neutral: refer to the orchestrator's specialist-run
-mechanism rather than assuming a particular vendor's task API.
+mechanism rather than assuming a particular vendor's task API. If the
+project already exists, preserve prior intake and charter versions and write
+a new version instead of overwriting them.
