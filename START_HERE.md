@@ -2,11 +2,12 @@
 
 ResearchOS is a collection of Markdown-defined research roles and
 procedures. It is not yet an executable agent framework. `MODEL` is the
-orchestrator placeholder: the frontier LLM selected and invoked through the
-CLI. `MODEL` may be Codex, Claude Code, AWS Bedrock (bring your own model),
-or a model invoked using usage credits. It reads these files, adopts the
-appropriate role, and—when the execution layer is available—runs the research
-process described by them.
+orchestrator placeholder: the frontier LLM and harness selected to run it.
+ResearchOS is harness-agnostic — bring your own harness. Claude Code and
+Codex are well-suited examples, but any agentic CLI or runtime capable of
+headless invocation and multi-step tool use will work. It reads these files,
+adopts the appropriate role, and—when the execution layer is available—runs
+the research process described by them.
 
 This file is intentionally topic-agnostic. It applies to any domain that
 benefits from structured research and adversarial review.

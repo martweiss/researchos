@@ -1,10 +1,31 @@
 # ResearchOS
 
 ResearchOS is a Markdown-defined research panel. `MODEL` is the generic name
-for the frontier LLM acting as orchestrator, invoked through a CLI. It may be
-Claude Code, Codex, a Bedrock-backed model (bring your own model), or a model
-invoked using usage credits. The Markdown files define the specialist roles,
-source standards, debate protocol, and handoffs.
+for the frontier LLM and harness acting as orchestrator. ResearchOS is
+harness-agnostic by design: bring your own harness. Any agentic CLI or
+runtime capable of multi-step tool use, source retrieval, and headless
+invocation can run the protocol — Claude Code and Codex are two well-suited
+examples, but the protocol does not assume or require either one. The
+Markdown files define the specialist roles, source standards, debate
+protocol, and handoffs; they do not depend on any specific provider or
+execution surface.
+
+## Choosing a harness
+
+Pick whichever harness you already have and trust for agentic work. What
+matters is that it can:
+
+- run headlessly/non-interactively, so it can be invoked per role and per
+  stage without a human driving each turn;
+- perform multi-step tool use — web search and page retrieval at minimum,
+  since several roles (Librarian, Panel Member research phase, Source
+  Auditor) must actually retrieve and inspect sources, not just recall them;
+- keep independent runs isolated from each other's context, so panel
+  members and reviewers stay independent per the protocol.
+
+Claude Code and Codex both satisfy this today; other agentic CLIs may as
+well. There is no reusable-contract reason to prefer one over another, and
+no part of `agents/` should assume a specific provider.
 
 The system is designed for questions where the answer should emerge from
 independent technical research and adversarial comparison, not from one
