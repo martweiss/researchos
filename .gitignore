@@ -2,7 +2,4 @@
 __pycache__/
 *.pyc
 .venv/
-
-# Personal deployment prong — not part of the public research protocol.
-# Graph/retrieval design, AWS architecture, model policy, and local dry-runs.
 deployment/
