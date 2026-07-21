@@ -2,9 +2,9 @@
 
 ResearchOS is a Markdown-defined research panel. `MODEL` is the generic name
 for the frontier LLM acting as orchestrator, invoked through a CLI. It may be
-Codex, a Bedrock-backed model such as BOYM, or a model invoked using usage
-credits. The Markdown files define the specialist roles, source standards,
-debate protocol, and handoffs.
+Claude Code, Codex, a Bedrock-backed model (bring your own model), or a model
+invoked using usage credits. The Markdown files define the specialist roles,
+source standards, debate protocol, and handoffs.
 
 The system is designed for questions where the answer should emerge from
 independent technical research and adversarial comparison, not from one
@@ -39,10 +39,7 @@ The recommended interaction is:
 `README.md` documents the system. `START_HERE.md` is the runbook. The files in
 `agents/` are role contracts that `MODEL` loads as needed; they are not
 standalone programs. Project-local run storage is defined in
-[`projects/README.md`](projects/README.md). The logical graph and retrieval
-design are documented in [`GRAPH_PLAN.md`](GRAPH_PLAN.md), and the personal
-AWS deployment is documented in [`AWS_PLAN.md`](AWS_PLAN.md). Neither plan has
-been implemented yet.
+[`projects/README.md`](projects/README.md).
 
 ## Project workspaces
 
@@ -93,11 +90,3 @@ Every agent may retrieve sources, but not every source type has the same evident
 - **Secondary reporting:** useful for finding leads and context, but important claims should be checked against primary or structured sources.
 
 No agent may cite a source it did not actually retrieve and inspect. Every source note should preserve the URL or identifier, author or organization, publication/post date, retrieval date, relevant excerpt or locator, and the exact claim the source supports. If a source cannot be verified, label it as a lead rather than evidence.
-
-## Current scope
-
-The current work is intentionally focused on the Markdown agent contracts and
-research protocol. Storage, embeddings, graph traversal, and the frontend are
-planned but not yet implemented. Agent outputs should still be structured and
-provenance-aware so they can be placed into the future graph without changing
-the research method.
