@@ -32,6 +32,15 @@ should record the model selected by that CLI. If the runtime does not expose a
 model ID, write `unknown` rather than guessing. The run manifest must record
 the same attribution so outputs from different models can be compared.
 
+## Current date
+
+`MODEL`'s training data has a fixed cutoff in the past; it does not know how
+much time has passed since then. Any role that reasons about a time horizon,
+project title, or forecast date range — not only the Prompt Architect — must
+be told the actual current date by the runtime invoking it, and must use
+that date rather than inferring "now" from training data. The runtime is
+responsible for supplying this; `MODEL` must not guess it.
+
 ## Fast path
 
 Open this repository in the CLI environment for your chosen `MODEL` and send
