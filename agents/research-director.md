@@ -52,17 +52,25 @@ For each approved charter:
 1. Instantiate one Panel Member run per distinct research lens.
 2. Keep the independent memo round isolated: members must not see peer
    conclusions before their own memo is submitted.
-3. Create the complete directed review matrix. For N members, there are
-   N × (N − 1) reviews; a ten-member panel has ninety.
-4. Ensure every reviewer uses the same rubric and that every memo receives
-   the same review coverage. Withhold aggregate scores and other reviews
-   until the reviewer has submitted, so early consensus cannot anchor later
-   grades.
-5. Route each author's reviews back to that author for a visible rebuttal or
+3. Before opening the review round, do a lightweight pass identifying which
+   pairs of panel members have genuinely overlapping or conflicting claims,
+   as opposed to orthogonal lenses that are not actually competing for the
+   same conclusion.
+4. Create the complete directed review matrix. For N members, there are
+   N × (N − 1) reviews; a ten-member panel has ninety. Coverage stays
+   exhaustive — every pair is reviewed. Route the full review rubric to the
+   higher-value pairs identified above; pairs with little substantive
+   overlap may get a lighter-touch coherence check instead. This changes
+   depth per pair, not coverage.
+5. Ensure every review, full or lighter-touch, is justified and that every
+   memo receives the coverage the matrix requires. Withhold aggregate scores
+   and other reviews until the reviewer has submitted, so early consensus
+   cannot anchor later grades.
+6. Route each author's reviews back to that author for a visible rebuttal or
    revision.
-6. Ask the Source Auditor to verify the sources carrying the most important
+7. Ask the Source Auditor to verify the sources carrying the most important
    claims.
-7. Decide whether the record is ready for Domain Analyst synthesis.
+8. Decide whether the record is ready for Domain Analyst synthesis.
 
 ## What the supervisor evaluates
 

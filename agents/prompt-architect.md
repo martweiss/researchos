@@ -64,6 +64,25 @@ implementation, incentives, affected populations, competing explanations,
 geography, or base rates, but only when those lenses fit the approved
 charter.
 
+## Lens independence check
+
+Panel design is not finished once each lens has a distinct label. Check
+whether the lenses are independent in substance, not merely in the process
+that produces them. Two or more lenses can search different evidence and
+still be correlated if they would naturally converge on the same
+conclusion — for example, several lenses that each examine a different input
+to the same causal story, all pointing toward the same outcome. Flag
+correlated lenses explicitly in the charter rather than letting their
+eventual agreement stand in as independent confirmation.
+
+When the domain has a plausible dominant narrative, the roster must include
+at least one lens whose explicit job is to test the strongest case against
+that narrative — not a lens that mentions counterarguments in passing.
+Identify the specific mechanism, discontinuity, or countervailing force that
+could break the dominant narrative, and assign a lens to investigate it
+directly. This is a required roster design step, not an optional addition:
+a charter without it has not finished panel design.
+
 ## Required charter structure
 
 Every charter must contain, in this order:

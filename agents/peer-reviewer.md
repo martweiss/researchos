@@ -36,6 +36,24 @@ The score is not a vote on truth. A high-quality minority memo may deserve a
 high grade even if few members agree with it. A popular thesis may deserve a
 low grade if all members rely on the same weak source.
 
+## Lighter-touch coherence check
+
+The Research Director may assign this instead of the required review when
+its pairwise pass (`agents/research-director.md`) finds little substantive
+overlap between two lenses. It is still one directed review per assigned
+pair — coverage stays exhaustive — but the depth is reduced. Provide:
+
+- whether the memo is internally consistent and consistent with the shared,
+  already-verified source record;
+- any claim that actually does overlap or conflict with your own memo,
+  despite the initial classification;
+- a single recommendation: no conflict found, or escalate to a full review.
+
+A lighter-touch check is not a rubber stamp. If you find real substantive
+overlap or a contradiction the pairwise pass missed, escalate rather than
+silently downgrading your review — the Research Director's classification is
+a starting estimate, not a final judgment on your pair.
+
 ## Independence and conduct
 
 Review the argument, not the person. Do not use credential, employer,

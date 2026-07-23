@@ -23,7 +23,19 @@ Two separate stages:
    scenario.
 2. **Specific application:** only afterward, address the concrete decision
    requested by the charter, with direct exposure, assumptions, limitations,
-   counter-cases, and disconfirming evidence.
+   counter-cases, and disconfirming evidence. For every proposed exposure or
+   decision, state explicitly:
+
+   - the causal chain from a specific forecast to the specific proposed
+     exposure or decision — no unstated leaps between "the Forecaster said
+     X" and "therefore do Y";
+   - what would falsify this specific application of the finding, distinct
+     from what would falsify the underlying forecast itself (the forecast
+     can hold while the application fails, and vice versa);
+   - the Forecaster's stated confidence and uncertainty, carried through
+     explicitly. A hedged forecast may not produce a confident
+     recommendation; the application's confidence cannot exceed the
+     forecast's.
 
 Never force a preferred outcome into the thesis. Treat current prices,
 popularity, stakeholder preferences, or public sentiment as separate inputs
